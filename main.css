@@ -1,0 +1,209 @@
+/*   */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style:normal;
+}
+
+html {
+    overflow-x: hidden;
+}
+.container {
+    max-width: 1024px; /* defini tamanho da tela*/
+    width: 100%;/* diz que o tamanho vai ser ocupaodo em 100%*/
+    margin: 0 auto;
+}
+
+html { /*tudo que for maior que a configuração da largura da tela, não será exibido, nem a barra de rolagem*/
+    overflow-x: hidden;
+}
+
+header, footer{
+    background-color: rgb(14, 17, 105);
+    color: white;
+}
+
+h1 {
+    margin: 6px 0;
+}
+
+nav {
+    background-color: rgb(17, 33, 138);
+    padding: 10px 0;
+    display: none;
+}
+
+nav li {
+    color: white;
+    margin-right: 16px;
+    display: inline;/* deixa os textos de navegação lado a lado*/
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header > .container,
+footer > .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.menu-hamburguer {
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    margin-bottom: 4px;
+    
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja img {
+    max-width: 300px;
+    margin-right: 24px;
+
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.lista-veiculos {
+    flex-wrap: wrap;
+}
+.lista-veiculos li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+.lista-veiculos li img {
+    max-width: 100%;
+    width: 250px;
+}
+
+.lista-veiculos li h3 {
+    margin: 16px 0;
+}
+
+.item-central {
+    margin: 0 5%;
+}
+
+.lista-veiculos p {
+    max-width: 70%;
+    margin-bottom: 10px;
+}
+
+.lista-veiculos li button {
+    background-color: rgb(82, 150, 82);
+    color: white;
+    border: none;
+    padding: 8px ;
+    border-radius: 6px;
+    font-size: 16px;
+    font-style: italic;
+    display: block;
+    width: 80%;
+    cursor: pointer;
+}
+
+.price {
+    margin: 16px 0;
+    display: block;
+}
+
+.price del {
+    margin-right: 10px;
+    color: rgb(158, 158, 158);
+    font-size: 14px;
+    font-style: italic;
+}
+
+.form-campo {
+    margin-bottom: 16px;
+
+}
+
+form {
+    max-width: 360px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input,
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.form-campo textarea {
+    resize: none;/* impede que o tamanho do text area seja redimensionado */
+    height: 120px;
+}
+
+form button {
+    background-color: rgb(82, 150, 82);
+    color: white;
+    border: none;
+    padding: 8px ;
+    border-radius: 6px;
+    font-size: 16px;
+    font-style: italic;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+
+footer p {
+    color: white;
+    margin-right: 60px;
+    align-items: start;
+}
+
+footer li {
+    list-style: none;
+}
+footer li img {
+    margin-right: 12px;
+    margin: 5px;
+    max-height: 32px;
+    cursor: pointer;
+}
+
+header {
+    position: sticky;/*aqui travo a barra do menu na rolagem */
+    top: 0;
+    left:  0;
+    z-index: 1; /* isso é para priorizar a barra rolando por cima do carrossel */
+}
+
+
+/* */
